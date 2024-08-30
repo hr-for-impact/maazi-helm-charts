@@ -19,5 +19,5 @@ certManagerIssuer: letsencrypt
 ingressClassName: "public"
 
 env:
-  public-env:
-  secret-env:
+  publicEnv:
+  secretEnv:
