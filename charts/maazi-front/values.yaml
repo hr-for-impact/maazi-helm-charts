@@ -20,3 +20,5 @@ ingressClassName: "public"
 
 env:
   secretEnv:
+
+config:
