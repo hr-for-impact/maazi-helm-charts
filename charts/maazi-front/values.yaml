@@ -18,6 +18,4 @@ certManagerIssuer: letsencrypt
 
 ingressClassName: "public"
 
-secretEnv:
-
 config:

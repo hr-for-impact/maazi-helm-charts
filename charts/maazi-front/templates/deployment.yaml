@@ -27,7 +27,7 @@ spec:
         - configMapRef:
             name: {{ .Release.Name }}-env
         - secretRef:
-            name: {{ .Release.Name }}-env
+            name: maazi-front-env # deployed manually as a sealed secret
         resources:
           requests:
             cpu: 100m
