@@ -1,0 +1,21 @@
+# Définition des ingress pour le path /, la liste des hosts est défini dans le repo de déploiment
+
+ingress:
+  baseDomain: ".fr"
+  hosts:
+    - host: maazi-backoffice
+
+image:
+  repository: rg.fr-par.scw.cloud/mazi/masi-backoffice
+  tag: 0.6.0
+
+
+# Déterminer le nombre de replicas du même pod que l'on souhaite
+replicas: 1
+
+# Choisir un issuer pour la création de certificats tls
+certManagerIssuer: letsencrypt
+
+ingressClassName: "public"
+
+config:
