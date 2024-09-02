@@ -1,5 +1,3 @@
-# Définition des ingress pour le path /, la liste des hosts est défini dans le repo de déploiment
-
 ingress:
   baseDomain: ".fr"
   hosts:
