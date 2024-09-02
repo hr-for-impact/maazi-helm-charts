@@ -1,7 +1,7 @@
 ingress:
-  baseDomain: ".fr"
+  baseDomain: ".maazi.fr"
   hosts:
-    - host: maazi-backoffice
+    - host: cms
 
 image:
   repository: rg.fr-par.scw.cloud/mazi/masi-backoffice

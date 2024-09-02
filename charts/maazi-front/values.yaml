@@ -1,7 +1,7 @@
 ingress:
-  baseDomain: ".fr"
+  baseDomain: ".maazi.fr"
   hosts:
-    - host: maazi-front
+    - host: www
 
 image:
   repository: rg.fr-par.scw.cloud/mazi/masi-front
