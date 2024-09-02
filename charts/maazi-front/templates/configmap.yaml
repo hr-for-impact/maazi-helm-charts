@@ -3,4 +3,6 @@ kind: ConfigMap
 metadata:
   name: {{ .Release.Name }}-env
 data:
-  {{ .Values.env.publicEnv }}
+  {{- range $key, $value := .Values }}
+  {{ $key }}: {{ $value | quote }}
+  {{- end }}
