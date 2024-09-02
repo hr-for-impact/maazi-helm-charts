@@ -1,0 +1,19 @@
+ingress:
+  baseDomain: ".fr"
+  hosts:
+    - host: maazi-dashboard
+
+image:
+  repository: rg.fr-par.scw.cloud/mazi/masi-dashboard
+  tag: 0.7.0
+
+
+# Déterminer le nombre de replicas du même pod que l'on souhaite
+replicas: 1
+
+# Choisir un issuer pour la création de certificats tls
+certManagerIssuer: letsencrypt
+
+ingressClassName: "public"
+
+config:

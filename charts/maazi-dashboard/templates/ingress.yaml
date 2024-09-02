@@ -1,0 +1,29 @@
+{{- range $k, $v := $.Values.ingress.hosts -}}
+---
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: {{ $.Release.Name }}-{{ $v.host }}
+  labels:
+    app.kubernetes.io/name: {{ $.Chart.Name }}
+  annotations:
+    cert-manager.io/cluster-issuer: "{{ required "A cert-manager-issuer must be specified" $.Values.certManagerIssuer }}"
+spec:
+  ingressClassName: "{{ required "An ingressClass must be specified" $.Values.ingressClassName }}"
+  tls:
+  - hosts:
+    - "{{ $v.host }}{{ $.Values.ingress.baseDomain }}"
+    secretName: tls-{{ $v.host }}
+  rules:
+  - host: "{{ required "A vhost value is required" $v.host }}{{ $.Values.ingress.baseDomain }}"
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+           name: {{ $.Release.Name }}
+           port: 
+             number: 80
+             number: 443
+{{- end }}
