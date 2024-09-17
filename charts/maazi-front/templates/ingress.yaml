@@ -7,6 +7,7 @@ metadata:
   labels:
     app.kubernetes.io/name: {{ $.Chart.Name }}
   annotations:
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true" # redirect maazi.fr to www.maazi.fr
     cert-manager.io/cluster-issuer: "{{ required "A cert-manager-issuer must be specified" $.Values.certManagerIssuer }}"
 spec:
   ingressClassName: "{{ required "An ingressClass must be specified" $.Values.ingressClassName }}"
