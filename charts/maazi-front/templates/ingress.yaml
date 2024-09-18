@@ -14,6 +14,7 @@ spec:
   tls:
   - hosts:
     - "{{ $v.host }}{{ $.Values.ingress.baseDomain }}"
+    - {{ $.Values.rootHost }}
     secretName: tls-{{ $v.host }}
   rules:
   - host: "{{ required "A vhost value is required" $v.host }}{{ $.Values.ingress.baseDomain }}"

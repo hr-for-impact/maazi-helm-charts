@@ -3,6 +3,9 @@ ingress:
   hosts:
     - host: www
 
+# root domain dont les requêtes seront redirigées sur www.maazi.fr => est inclu dans le certificat TLS
+rootHost: maazi.fr 
+
 image:
   repository: rg.fr-par.scw.cloud/mazi/masi-front
   tag: 0.8.7
