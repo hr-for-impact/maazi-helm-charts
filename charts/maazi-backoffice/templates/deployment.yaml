@@ -31,10 +31,10 @@ spec:
         resources:
           requests:
             cpu: 100m
-            memory: 100Mi
+            memory: 256Mi
           limits:
             cpu: 500m
-            memory: 250Mi
+            memory: 512Mi
 
       imagePullSecrets:
       - name: registry-credentials
