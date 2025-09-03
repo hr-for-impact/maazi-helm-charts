@@ -2,6 +2,15 @@ apiVersion: v1
 entries:
   maazi-backoffice:
   - apiVersion: v2
+    created: "2025-09-03T18:39:46.405019157Z"
+    description: Maazi backoffice helm chart
+    digest: e4fdd56b538dd9181de47c147227a75ef2ef2a28fc8c9a41a7d77cc1293a4454
+    name: maazi-backoffice
+    type: application
+    urls:
+    - https://github.com/hr-for-impact/maazi-helm-charts/releases/download/maazi-backoffice-0.0.3/maazi-backoffice-0.0.3.tgz
+    version: 0.0.3
+  - apiVersion: v2
     created: "2025-04-29T12:21:53.760281244Z"
     description: Maazi backoffice helm chart
     digest: 43705d183a258da4b628bffb51b5d39b69f121a9aab84f28483b797b253ffd18
@@ -39,6 +48,15 @@ entries:
     - https://github.com/hr-for-impact/maazi-helm-charts/releases/download/maazi-dashboard-0.0.1/maazi-dashboard-0.0.1.tgz
     version: 0.0.1
   maazi-front:
+  - apiVersion: v2
+    created: "2025-09-03T18:39:46.525052081Z"
+    description: Maazi core webservice's helm chart
+    digest: cd4198bcb2ad1b2252857c0a8baf2201581801eb34c0523c61e685112e3129ac
+    name: maazi-front
+    type: application
+    urls:
+    - https://github.com/hr-for-impact/maazi-helm-charts/releases/download/maazi-front-0.3.2/maazi-front-0.3.2.tgz
+    version: 0.3.2
   - apiVersion: v2
     created: "2024-09-18T09:27:48.210649593Z"
     description: Maazi core webservice's helm chart
@@ -141,4 +159,4 @@ entries:
     urls:
     - https://github.com/hr-for-impact/maazi-helm-charts/releases/download/maazi-front-0.0.0/maazi-front-0.0.0.tgz
     version: 0.0.0
-generated: "2025-04-29T12:21:53.760320558Z"
+generated: "2025-09-03T18:39:46.525140265Z"
