@@ -34,7 +34,7 @@ spec:
             memory: 100Mi
           limits:
             cpu: '1'
-            memory: 250Mi
+            memory: 512Mi
 
       imagePullSecrets:
       - name: registry-credentials
