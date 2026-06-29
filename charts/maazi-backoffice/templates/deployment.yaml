@@ -6,6 +6,11 @@ metadata:
   name: {{ .Release.Name }}
 spec:
   replicas: {{ .Values.replicas }}
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
   selector:
     matchLabels:
       app.kubernetes.io/name: {{ .Chart.Name }}
@@ -23,6 +28,12 @@ spec:
         name: maazi-backoffice
         ports:
           - containerPort: 8080
+        readinessProbe:
+          httpGet:
+            path: /_health
+            port: 8080
+          initialDelaySeconds: 15
+          periodSeconds: 10
         envFrom:
         - configMapRef:
             name: {{ .Release.Name }}-env
@@ -32,9 +43,11 @@ spec:
           requests:
             cpu: 100m
             memory: 256Mi
+            ephemeral-storage: 200Mi
           limits:
             cpu: '1'
             memory: 1Gi
+            ephemeral-storage: 1Gi
 
       imagePullSecrets:
       - name: registry-credentials
