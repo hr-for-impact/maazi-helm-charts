@@ -34,6 +34,7 @@ spec:
             port: 8080
           initialDelaySeconds: 15
           periodSeconds: 10
+          timeoutSeconds: 5
         envFrom:
         - configMapRef:
             name: {{ .Release.Name }}-env
