@@ -103,6 +103,15 @@ entries:
     version: 0.0.1
   maazi-front:
   - apiVersion: v2
+    created: "2026-08-06T14:57:56.552580597Z"
+    description: Maazi core webservice's helm chart
+    digest: 4ed168a619bd17229e3652593d76acad4c511631a58f567e86fdc94d8d760518
+    name: maazi-front
+    type: application
+    urls:
+    - https://github.com/hr-for-impact/maazi-helm-charts/releases/download/maazi-front-0.6.0/maazi-front-0.6.0.tgz
+    version: 0.6.0
+  - apiVersion: v2
     created: "2026-07-24T13:25:47.498392779Z"
     description: Maazi core webservice's helm chart
     digest: 232182a3a38fa555983ae0e166a37f7d6989c5a0b143cd28cb2ed687c579e7f0
@@ -231,4 +240,4 @@ entries:
     urls:
     - https://github.com/hr-for-impact/maazi-helm-charts/releases/download/maazi-front-0.0.0/maazi-front-0.0.0.tgz
     version: 0.0.0
-generated: "2026-07-24T13:25:47.498540764Z"
+generated: "2026-08-06T14:57:56.552731027Z"
