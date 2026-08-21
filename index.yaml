@@ -75,6 +75,15 @@ entries:
     version: 0.0.0
   maazi-dashboard:
   - apiVersion: v2
+    created: "2026-08-21T15:52:44.73743367Z"
+    description: Maazi dashboard helm chart
+    digest: 7a39a59b5f7ea167e018a8e74cf772ed6abc9e7b01e3a0aa1209fb6a77275f70
+    name: maazi-dashboard
+    type: application
+    urls:
+    - https://github.com/hr-for-impact/maazi-helm-charts/releases/download/maazi-dashboard-0.6.1/maazi-dashboard-0.6.1.tgz
+    version: 0.6.1
+  - apiVersion: v2
     created: "2026-08-10T15:15:07.45550008Z"
     description: Maazi dashboard helm chart
     digest: 302a62715217737740a03c099379b2bc209120e64843cf2ad61e81ebd2c9b7ea
@@ -249,4 +258,4 @@ entries:
     urls:
     - https://github.com/hr-for-impact/maazi-helm-charts/releases/download/maazi-front-0.0.0/maazi-front-0.0.0.tgz
     version: 0.0.0
-generated: "2026-08-10T15:15:07.455557858Z"
+generated: "2026-08-21T15:52:44.737538317Z"
