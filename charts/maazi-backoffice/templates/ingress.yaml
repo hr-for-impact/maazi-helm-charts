@@ -7,6 +7,7 @@ metadata:
   labels:
     app.kubernetes.io/name: {{ $.Chart.Name }}
   annotations:
+    nginx.ingress.kubernetes.io/proxy-body-size: "25m" # allow larger file uploads
     cert-manager.io/cluster-issuer: "{{ required "A cert-manager-issuer must be specified" $.Values.certManagerIssuer }}"
 spec:
   ingressClassName: "{{ required "An ingressClass must be specified" $.Values.ingressClassName }}"
