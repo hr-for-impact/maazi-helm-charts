@@ -40,6 +40,15 @@ jobs:
         if: steps.list-changed.outputs.changed == 'true'
         uses: helm/kind-action@v1.10.0
 
+      # charts reference secrets that are deployed manually to the real cluster
+      # (sealed secrets), so CI creates dummies here: kind only, dies with runner
+      - name: Prepare CI secrets
+        if: steps.list-changed.outputs.changed == 'true'
+        run: |
+          kubectl create namespace ci-test
+          kubectl create secret generic maazi-meilisearch-env \
+            --from-literal=MEILI_MASTER_KEY=$(openssl rand -hex 48) -n ci-test
+
       - name: Run chart-testing (install)
         if: steps.list-changed.outputs.changed == 'true'
-        run: ct install --target-branch ${{ github.event.repository.default_branch }}
+        run: ct install --target-branch ${{ github.event.repository.default_branch }} --namespace ci-test
