@@ -17,9 +17,10 @@ resources:
 persistence:
   size: 10Gi
 
-# Sealed secret deployed manually (same pattern as maazi-backoffice-env):
-# data key MEILI_MASTER_KEY (long random string). envFrom passes secret keys
-# through as env vars, so the key name IS the env var name Meilisearch reads.
+# Secret deployed manually with kubectl create secret on maazi-prod (NOT a
+# SealedSecret). data key MEILI_MASTER_KEY (long random string). envFrom passes
+# secret keys through as env vars, so the key name IS the env var name
+# Meilisearch reads.
 masterKeySecretName: maazi-meilisearch-env
 
 # Strapi resolves this host; keep single instance, never share across envs.

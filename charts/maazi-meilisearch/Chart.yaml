@@ -2,7 +2,7 @@ apiVersion: v2
 name: maazi-meilisearch
 description: Maazi Meilisearch engine for the candidates search (internal only)
 type: application
-version: 0.1.0
+version: 0.1.1
 appVersion: "1.54.3"
 maintainers:
   - name: maazi
