@@ -4,5 +4,6 @@ description: Maazi dashboard helm chart
 type: application
 version: 0.6.2
 maintainers:
-  - name: Mehdi Fekih
+  - name: "Mehdi Fekih"
     email: mehdi.fekih@dynatos-design.com
+    url: "https://github.com/hr-for-impact"
