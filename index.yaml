@@ -314,6 +314,18 @@ entries:
   maazi-meilisearch:
   - apiVersion: v2
     appVersion: 1.54.3
+    created: "2026-11-23T16:49:19.822484767Z"
+    description: Maazi Meilisearch engine for the candidates search (internal only)
+    digest: 46a7c682481c15ce4450ce72788587fb00abc313d3a84dc6a5316aedc9942f8a
+    maintainers:
+    - name: maazi
+    name: maazi-meilisearch
+    type: application
+    urls:
+    - https://github.com/hr-for-impact/maazi-helm-charts/releases/download/maazi-meilisearch-0.1.2/maazi-meilisearch-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.54.3
     created: "2026-10-13T14:26:54.160319187Z"
     description: Maazi Meilisearch engine for the candidates search (internal only)
     digest: 83db9662b8e11c5124eb383e58df9beb78b32b793dc123847915a60b8287a61c
@@ -336,4 +348,4 @@ entries:
     urls:
     - https://github.com/hr-for-impact/maazi-helm-charts/releases/download/maazi-meilisearch-0.1.0/maazi-meilisearch-0.1.0.tgz
     version: 0.1.0
-generated: "2026-11-23T16:01:43.832389752Z"
+generated: "2026-11-23T16:49:19.82260405Z"
