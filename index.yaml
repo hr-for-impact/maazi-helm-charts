@@ -2,6 +2,19 @@ apiVersion: v1
 entries:
   maazi-backoffice:
   - apiVersion: v2
+    created: "2026-11-23T16:01:43.627293059Z"
+    description: Maazi backoffice helm chart
+    digest: 02517e1aa5b6c2f5efd661f84ae60e2e4a20e952bfe8998573fcca5f7491c35b
+    maintainers:
+    - email: mehdi.fekih@dynatos-design.com
+      name: SetiZ
+      url: https://github.com/SetiZ
+    name: maazi-backoffice
+    type: application
+    urls:
+    - https://github.com/hr-for-impact/maazi-helm-charts/releases/download/maazi-backoffice-0.5.2/maazi-backoffice-0.5.2.tgz
+    version: 0.5.2
+  - apiVersion: v2
     created: "2026-09-24T13:33:13.073749635Z"
     description: Maazi backoffice helm chart
     digest: d5093119498fcb94864177e35d3f2ec0cc156442c25cdabce05e9cf39f202778
@@ -83,6 +96,19 @@ entries:
     - https://github.com/hr-for-impact/maazi-helm-charts/releases/download/maazi-backoffice-0.0.0/maazi-backoffice-0.0.0.tgz
     version: 0.0.0
   maazi-dashboard:
+  - apiVersion: v2
+    created: "2026-11-23T16:01:43.83228221Z"
+    description: Maazi dashboard helm chart
+    digest: 88abf9778aa77090dfa2e5b46aa56f013686fd940beb8fd2f67190dd7fcd7cbd
+    maintainers:
+    - email: mehdi.fekih@dynatos-design.com
+      name: SetiZ
+      url: https://github.com/SetiZ
+    name: maazi-dashboard
+    type: application
+    urls:
+    - https://github.com/hr-for-impact/maazi-helm-charts/releases/download/maazi-dashboard-0.6.2/maazi-dashboard-0.6.2.tgz
+    version: 0.6.2
   - apiVersion: v2
     created: "2026-08-21T15:52:44.73743367Z"
     description: Maazi dashboard helm chart
@@ -310,4 +336,4 @@ entries:
     urls:
     - https://github.com/hr-for-impact/maazi-helm-charts/releases/download/maazi-meilisearch-0.1.0/maazi-meilisearch-0.1.0.tgz
     version: 0.1.0
-generated: "2026-10-26T14:45:16.279804761Z"
+generated: "2026-11-23T16:01:43.832389752Z"
