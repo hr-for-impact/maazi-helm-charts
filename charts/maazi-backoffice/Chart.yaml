@@ -4,6 +4,6 @@ description: Maazi backoffice helm chart
 type: application
 version: 0.5.2
 maintainers:
-  - name: "Mehdi Fekih"
+  - name: "SetiZ"
     email: mehdi.fekih@dynatos-design.com
-    url: "https://github.com/hr-for-impact"
+    url: "https://github.com/SetiZ"
