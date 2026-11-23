@@ -3,3 +3,6 @@ name: maazi-backoffice
 description: Maazi backoffice helm chart
 type: application
 version: 0.5.2
+maintainers:
+  - name: Mehdi Fekih
+    email: mehdi.fekih@dynatos-design.com
