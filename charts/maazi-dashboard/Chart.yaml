@@ -1,5 +1,9 @@
 apiVersion: v2
 name: maazi-dashboard
-description: Maazi dashboard helm chart 
+description: Maazi dashboard helm chart
 type: application
-version: 0.6.1
+version: 0.6.2
+maintainers:
+  - name: "SetiZ"
+    email: mehdi.fekih@dynatos-design.com
+    url: "https://github.com/SetiZ"
